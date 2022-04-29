@@ -162,8 +162,8 @@ body{
 .dados li::before{
   content: '';
   display: inline-block;
-  width: 15px;
-  height: 7px;
+  width: 18px;
+  height: 8px;
   margin-right: 10px;
   background: #FB5;
 }
