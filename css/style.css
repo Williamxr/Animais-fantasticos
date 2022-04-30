@@ -30,7 +30,7 @@ body{
 .menu ul{
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 12px;
 }
 
 .menu li a{
