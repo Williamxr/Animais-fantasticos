@@ -20,3 +20,8 @@ function initTabNav(){
   }
 }
 initTabNav();
+
+function initAccordion(){
+
+  const accordionList = document.querySelectorAll('.js-accordion dt');
+  const activeClass = 'ativo';
