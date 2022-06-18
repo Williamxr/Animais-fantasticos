@@ -207,3 +207,12 @@ body{
     margin-bottom: 0px;
   }
 }
+
+.js .js-tabcontent section{
+  display: none;
+}
+
+.js-tabcontent section.ativo{
+  display: block !important;
+  animation: show .5s forwards; /*forwards para que quando a animação termine, ela fique no estado final (to) ao invés de voltar para o começo*/
+}
