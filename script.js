@@ -44,5 +44,5 @@ function initAccordion(){
 initAccordion();
 
 function initScrollSuave(){
-  
+  const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
 }
