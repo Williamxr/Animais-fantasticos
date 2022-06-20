@@ -42,3 +42,7 @@ function initAccordion(){
   }
 }
 initAccordion();
+
+function initScrollSuave(){
+  
+}
