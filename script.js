@@ -56,4 +56,8 @@ function initScrollSuave(){
       block: 'start',
     });
   }
+    
+  linksInternos.forEach((link) => {
+    link.addEventListener('click', scrollToSection);
+  })
 }
