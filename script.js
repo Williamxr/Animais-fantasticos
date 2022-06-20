@@ -61,3 +61,4 @@ function initScrollSuave(){
     link.addEventListener('click', scrollToSection);
   })
 }
+initScrollSuave();
