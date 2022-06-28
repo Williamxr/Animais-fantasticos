@@ -1,7 +1,7 @@
 function initTabNav(){
 
-  const tabMenu = document.querySelectorAll('.js-tabmenu li');
-  const tabContent = document.querySelectorAll('.js-tabcontent section');
+  const tabMenu = document.querySelectorAll('[data-tab="menu"] li');
+  const tabContent = document.querySelectorAll('[data-tab="content"] section');
   if(tabMenu.length && tabContent){
     tabContent[0].classList.add('ativo');
     
@@ -63,3 +63,23 @@ function initScrollSuave(){
   })
 }
 initScrollSuave();
+
+function initAnimacaoScroll(){
+  const sections = document.querySelectorAll('[data-anime="scroll"]');
+
+  if(sections.length){
+    const windowMetade = window.innerHeight * 0.6;
+  
+      function animaScroll(){
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top - windowMetade;
+        if(sectionTop < 0){
+          section.classList.add('ativo');
+        }
+      });
+    }
+    animaScroll();
+    window.addEventListener('scroll', animaScroll);
+  }
+}
+initAnimacaoScroll();
