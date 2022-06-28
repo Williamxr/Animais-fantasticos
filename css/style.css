@@ -235,22 +235,22 @@ body{
   }
 }
 
-.js .js-accordion dd{
+.js [data-anime="accordion"] dd{
   display: none;
 }
 
-.js-accordion dd.ativo{
+[data-anime="accordion"] dd.ativo{
   display: block;
   animation: slideDown .5s forwards;
 }
 
-.js-accordion dt::after{
+[data-anime="accordion"] dt::after{
  content: '⮟';
  margin-left: 10px;
  cursor: pointer;
 }
 
-.js-accordion dt.ativo::after{
+[data-anime="accordion"] dt.ativo::after{
   content: '⮝';
 }
 
